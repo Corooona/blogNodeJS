@@ -1,0 +1,40 @@
+# Ignorar node_modules
+node_modules/
+
+# Ignorar archivos de entorno (pueden contener información sensible)
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Ignorar archivos de configuración de IDE
+.vscode/
+.idea/
+
+# Ignorar archivos de logs
+*.log
+
+# Ignorar archivos de dependencias instaladas
+jspm_packages/
+
+# Ignorar archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de compilación o build
+dist/
+build/
+out/
+*.exe
+*.bin
+
+# Ignorar archivos de npm/yarn
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp*
+
+# Ignorar archivos de caché
+.cache/
+.temp/

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Editar </h1>
+
+    <form action="/update/<%= post._id %>" method="POST">
+        <label for="texto">Texto:</label>
+        <textarea id="texto" name="texto" required><%= post.texto %></textarea><br><br>
+    
+        <label for="imagen">Imagen (opcional):</label>
+        <input type="text" id="imagen" name="imagen" placeholder="URL de la imagen" value="<%= post.imagen || '' %>"><br><br>
+    
+        <button type="submit">Actualizar</button>
+    </form>
+
+    <a href="/">Cancelar</a>    
+</body>
+</html>
